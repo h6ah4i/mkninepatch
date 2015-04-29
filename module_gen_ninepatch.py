@@ -34,28 +34,28 @@ def draw_left_markers(image, markers, color):
 	with Drawing() as draw:
 		draw.fill_color = color
 		for m in markers:
-			draw.line((0, m[0]), (0, m[1]))
+			draw.line((0, m[0]+1), (0, m[1]+1))
 		draw(image)
 
 def draw_top_markers(image, markers, color):
 	with Drawing() as draw:
 		draw.fill_color = color
 		for m in markers:
-			draw.line((m[0], 0), (m[1], 0))
+			draw.line((m[0]+1, 0), (m[1]+1, 0))
 		draw(image)
 
 def draw_right_markers(image, markers, color):
 	with Drawing() as draw:
 		draw.fill_color = color
 		for m in markers:
-			draw.line((image.width - 1, m[0]), (image.width - 1, m[1]))
+			draw.line((image.width - 1, m[0]+1), (image.width - 1, m[1]+1))
 		draw(image)
 
 def draw_bottom_markers(image, markers, color):
 	with Drawing() as draw:
 		draw.fill_color = color
 		for m in markers:
-			draw.line((m[0], image.height - 1), (m[1], image.height - 1))
+			draw.line((m[0]+1, image.height - 1), (m[1]+1, image.height - 1))
 		draw(image)
 
 def gen_ninepatch(src, dest, left=None, right=None, top=None, bottom=None):
