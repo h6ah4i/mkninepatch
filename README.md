@@ -30,7 +30,7 @@ usage: mkninepatch.py [-h] [-l1 LEFT1 LEFT1] [-l2 LEFT2 LEFT2]
                       [-r RIGHT RIGHT] [-b BOTTOM BOTTOM]
                       input_png output_png
 
-$ mkninepatch input.png output.9.png -l1 10 20 -t 20 40 -r 30 60 -b 40 80
+$ mkninepatch input.png output.9.png -l1 10 20 -t1 20 40 -r 30 60 -b 40 80
 ```
 
 
