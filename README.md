@@ -6,19 +6,20 @@ Simple command line tool which generates Android's 9-patch resource.
 ### Installation
 
 1. Install [Wand](http://docs.wand-py.org/en/0.4.0/) Python module
-```bash
-pip install Wand
-```
+
+    ```bash
+    pip install Wand
+    ```
 
 2. Clone this repository
-```bash
-git@github.com:h6ah4i/mkninepatch.git
-```
+    ```bash
+    git@github.com:h6ah4i/mkninepatch.git
+    ```
 
 3. Add the mkninepatch directory in your `$PATH`
-```
-export PATH=$PATH:[path of the cloned mkninepatch directory]
-```
+    ```
+    export PATH=$PATH:[path of the cloned mkninepatch directory]
+    ```
 
 ### Usage
 
