@@ -24,14 +24,22 @@ Simple command line tool which generates Android's 9-patch resource.
 ### Usage
 
 ```
-usage: mkninepatch.py [-h] [-l1 LEFT1 LEFT1] [-l2 LEFT2 LEFT2]
-                      [-l3 LEFT3 LEFT3] [-l4 LEFT4 LEFT4] [-t1 TOP1 TOP1]
-                      [-t2 TOP2 TOP2] [-t3 TOP3 TOP3] [-t4 TOP4 TOP4]
-                      [-r RIGHT RIGHT] [-b BOTTOM BOTTOM]
-                      input_png output_png
+# input : W: 90px, H: 70 px
+# output: W: 92px, H: 72 px
 
-$ mkninepatch input.png output.9.png -l1 10 20 -t1 20 40 -r 30 60 -b 40 80
+# LEFT  : 10 px (from: 10, to: 19)
+# TOP   : 20 px (from: 20, to: 39)
+# RIGHT : 30 px (from: 30, to: 59)
+# BOTTOM: 40 px (from: 40, to: 79)
+
+$ mkninepatch input.png output.9.png -l1 10 19 -t1 20 39 -r 30 59 -b 40 79
 ```
+
+| Input PNG file (input.png) | Result PNG file (output.9.png) |
+|----------------------------------------------|----------------------------------------------|
+| <a href="./pic/input.png?raw=true"><img src="./pic/input.png?raw=true" alt="Input PNG file (input.png)" width="90" height="72" /></a> | <a href="./pic/output.9.png?raw=true"><img src="./pic/output.9.png?raw=true" alt="Result PNG file (output.9.png)" width="92" height="72" /></a> |
+
+
 
 
 ### Command line options
